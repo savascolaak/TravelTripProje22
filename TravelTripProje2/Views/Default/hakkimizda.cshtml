@@ -1,0 +1,13 @@
+﻿@using TravelTripProje2.Models.Entity
+@model List<Hakkimizda>
+@{
+    ViewBag.Title = "hakkimizda";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+<div>
+    @foreach (var item in Model)
+    {
+        <img src="@item.FotoUrl" />
+    }
+
+</div>
